@@ -10,7 +10,7 @@ Author: [Mahmoud Shaheen](https://www.moshaheen.com/)
 [Github](https://github.com/Moqa-Dev/Kajo/)  
 
 ## Why?
-Kajo is a full fledged template contains common functionality that's mostly required in any project.  
+Kajo is a full-fledged template contains common functionality that's mostly required in any project.  
 It's ready to use and includes an example of simple business for a topics-posts entities which is implemented as a show case in most of MoQa Templates.  
 
 ## Features:
@@ -19,8 +19,8 @@ It's ready to use and includes an example of simple business for a topics-posts 
         * Supported using Bearer authentication
         * built in top of Microsoft Identity
     * Authorization:
-        * Genric & Extensible Authorization integrated in the template using dynamic permissions
-        * roles can be dynamically assigned to users
+        * Generic  & Extensible Authorization integrated in the template using dynamic permissions
+        * Roles can be dynamically assigned to users
     * Permissions:
         * Permissions logic is implemented for dynamic assignment of permissions to roles
 * OData:
@@ -37,7 +37,7 @@ It's ready to use and includes an example of simple business for a topics-posts 
     * Using Log4Net Framework
 * CORS:
     * CORS Support included in project,
-    * customizable through configuration
+    * Customizable through configuration
 * DBContext:
     * EFCore Framework is used for Database context
 
