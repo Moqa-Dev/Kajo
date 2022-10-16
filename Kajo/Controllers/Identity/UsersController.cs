@@ -63,10 +63,11 @@ namespace Kajo.Controllers.Identity
         [ProducesResponseType(typeof(ErrorDto), 404)]
         [EnableQuery(AllowedQueryOptions = AllowedQueryOptions.Supported)]
         [Authorize(Permissions.Users.View)]
-        public async Task<IActionResult> GetById([FromODataUri] Guid id)
+        public async Task<IActionResult> GetById([FromODataUri] String id)
         {
             ValidateModel();
-            return Ok(await _usersService.GetById(id));
+            Guid guid = Guid.Parse(id);
+            return Ok(await _usersService.GetById(guid));
         }
 
 
@@ -83,10 +84,11 @@ namespace Kajo.Controllers.Identity
         [ProducesResponseType(204)]
         [ProducesResponseType(typeof(ErrorDto), 404)]
         [Authorize(Permissions.Users.Delete)]
-        public async Task<IActionResult> Delete([FromODataUri] Guid id)
+        public async Task<IActionResult> Delete([FromODataUri] String id)
         {
             ValidateModel();
-            _usersService.Delete(id);
+            Guid guid = Guid.Parse(id);
+            _usersService.Delete(guid);
             return StatusCode(StatusCodes.Status204NoContent);
         }
     }
