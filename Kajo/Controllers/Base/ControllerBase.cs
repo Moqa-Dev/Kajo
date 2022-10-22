@@ -153,7 +153,7 @@ namespace Kajo.Controllers.Base
                 string errors = string.Join(System.Environment.NewLine,
                     ModelState.Values
                     .SelectMany(e => e.Errors)
-                    .Select(e => e.Exception.Message + e.ErrorMessage));
+                    .Select(e => e.ErrorMessage));
 
                 errors = "The input was not valid. " + System.Environment.NewLine + errors;
 

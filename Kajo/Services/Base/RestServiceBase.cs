@@ -49,9 +49,9 @@ namespace Kajo.Services.Base
 
         public async void Delete(TId id)
         {
-            var entity = await GetEntityById(id);
+            var entity = GetEntityById(id).Result;
             _context.Set<TEntity>().Remove(entity);
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
 
         protected async Task<TEntity> GetEntityById(TId id)
