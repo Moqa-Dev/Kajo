@@ -14,6 +14,7 @@ namespace Kajo.Configuration.Startup.HostingStartup
 
             services.AddScoped<TopicsRestService>();
             services.AddScoped<PostsRestService>();
+            services.AddScoped<PublicPostsService>();
         }
     }
 }

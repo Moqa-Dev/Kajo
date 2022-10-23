@@ -73,6 +73,10 @@ namespace Kajo.DataContext
             builder.EntitySet<Topic>("Topics");
             builder.EntitySet<Post>("Posts");
 
+            builder
+                .Function("GetPublicPosts")
+                .Returns(typeof(string));
+
         }
     }
 }
