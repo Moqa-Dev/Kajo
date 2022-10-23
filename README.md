@@ -2,10 +2,10 @@
 
 Part of [MoQa](https://moqa.moshaheen.com/) Project  
 
-Version: [1.0.0](https://github.com/Moqa-Dev/Kajo/releases/tag/1.0.0)  
+Version: [1.0.1](https://github.com/Moqa-Dev/Kajo/releases/tag/1.0.1)  
 Author: [Mahmoud Shaheen](https://www.moshaheen.com/)
 ## Links:
-[Download](https://github.com/Moqa-Dev/Kajo/archive/refs/tags/1.0.0.zip)  
+[Download](https://github.com/Moqa-Dev/Kajo/archive/refs/tags/1.0.1.zip)  
 [Website](https://moqa.moshaheen.com/Kajo/)  
 [Github](https://github.com/Moqa-Dev/Kajo/)  
 
